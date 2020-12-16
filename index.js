@@ -39,4 +39,17 @@ function move() {
 move()
 
 let timerId = setInterval(move, 1000)
-clearInterval()
+clearInterval(timerId)
+
+
+function control(e) {
+    if (e.keyCode === 39) {
+        console.log('right arrow pressed')
+    } else if (e.keyCode === 38) {
+        console.log('up arrow pressed')
+    } else if (e.keyCode === 37) {
+        console.log('left arrow pressed')
+    } else if (e.keyCode === 40) {
+        console.log('down Arrow pressed')
+    }
+}
